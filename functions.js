@@ -116,7 +116,7 @@ function resultEx7() {
 function guessGame() {
     let numTop = parseInt(prompt("Nhap vao gioi han tren :"));
     let numBot = parseInt(prompt("Nhap vao gioi han duoi :"));
-    if (numTop > numBot && numBot > 0) {
+    if (numTop >= numBot && numBot >= 0) {
         let MyNum = numBot + Math.floor(Math.random() * (numTop - numBot + 1));
         let UrNum = null;
         let i = 0;
